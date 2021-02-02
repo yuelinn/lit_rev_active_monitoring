@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Active Monitoring}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Transect Monitoring}{section.1}% 2
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Nomenclature}{subsection.1.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.1.2}{Traditional/Baseline methods}{subsection.1.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.1.3}{Gaussian Processes}{subsection.1.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.1.4}{MEPP}{subsection.1.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.1.5}{M2IPP}{subsection.1.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.1.6}{Tale of Two Algorithms}{subsection.1.1}% 8
+\BOOKMARK [3][-]{subsubsection.1.1.7}{greedy MEPP \(gMEPP\)}{subsection.1.1}% 9
+\BOOKMARK [3][-]{subsubsection.1.1.8}{greedy M2IPP \(gM2IPP\)}{subsection.1.1}% 10
+\BOOKMARK [1][-]{section.2}{Considering Localisation Uncertainty}{}% 11
+\BOOKMARK [2][-]{subsection.2.1}{Informative Planning Framework}{section.2}% 12
+\BOOKMARK [1][-]{section.3}{Concerns of the Paradigm}{}% 13
+\BOOKMARK [1][-]{section*.1}{Glossary}{}% 14
