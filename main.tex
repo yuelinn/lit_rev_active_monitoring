@@ -1,5 +1,12 @@
 \documentclass{article}
+\usepackage[utf8]{inputenc}
 \usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[toc]{glossaries}
+
+\makenoidxglossaries
+\loadglsentries{glossaries}
 
 \title{Scalable Active Monitoring for Agriculture and Disaster Relief}
 \date{2020-12-28}
@@ -10,7 +17,69 @@
   \maketitle
   \newpage
   \section{Active Monitoring}
-  Subsections will be divied based on their approach.
+  Path planning for mapping under uncertainty/ monitoring large areas...
+  Subsections will be divided based on their approach to the problem statement.
   \subsection{Transect Monitoring}
+    \subsubsection{Nomenclature}
+      \begin{itemize}
+        \item k robots
+        \item Transect:
+        \begin{itemize}
+          \item ${r x n}$ sampled locations
+          \item where $k \leq r, n >> r $
+          \item $n$-axis of the grid is parallel to the direction with highest variability
+          \item each robot can only visit one item per row, $r$. Max no. of visits per robot is $n$
+        \end{itemize}
+        \item examples of use cases: Plankton monitoring (T2A)
+        % TODO: add biblo
+      \end{itemize}
+   \subsubsection{Traditional/Baseline methods}
+   Heuristic Design:
+   \begin{enumerate}
+     \item Discretise space into rectagular grid (with an axis along highest variability)
+     \item Sample with k robots (\Gls{k-TSP})
+     \item Cons:
+     \begin{itemize}
+      \item constrained by sampling design (no optimisation for uncertainty)
+      \item does not take into account higher sampling resolution of robots
+    \end{itemize}
+   \end{enumerate}
+   \subsubsection{Gaussian Processes}
+   TBD.
+   \subsubsection{MEPP}
+   Maximum Entropy Path Planning
+   \subsubsection{M$^2$IPP}
+   Maximum Mutual Information Path Planning
+   Mutual information = measure of reduction in uncertainty
+   \subsubsection{Tale of Two Algorithms}
+   % TODO: add biblo
+   MEPP(m) and M$^2$IPP(m): approximations of MEPP and M$^2$IPP for faster compute time. (also performance guarantee for MEPP)
+   scales linearly with time horizon, $n$
+   \subsubsection{greedy MEPP (gMEPP)}
+
+   \subsubsection{greedy M$^2$IPP (gM$^2$IPP)}
+
+   \section{Considering Localisation Uncertainty}
+   eg. indoor temperature mapping
+   \subsection{Informative Planning Framework}
+   % TODO add to biblo: [IPP for active Filed mapping under localization uncertainty]
+   Uncertainty in mapping and Planning
+   GP env rep gen fr inputs (of active sensors?)
+
+
+
+
+   \section{Concerns of the Paradigm}
+   1. computational efficiency/ scalability (for large areas) [T2A] \newline
+   2. uncertainty management \newline
+   3. parameter tuning? \newline
+   3. robustness \newline
+   4. scalability for more robots? [LINN]
+
+
+
+\clearpage
+\printnoidxglossaries
+
 
 \end{document}
